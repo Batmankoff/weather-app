@@ -20,7 +20,7 @@ const WeatherHighlights = ({ forecast, current }) => {
           />
           <WeatherStat
             parameter={'Wind Speed'}
-            value={current.wind_kph}
+            value={Math.round(current.wind_kph)}
             units='k/h'
           />
           <WeatherStat
