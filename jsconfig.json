@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src*"],
+      "@": ["src"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@fonts": ["src/fonts"],
+      "@fonts/*": ["src/common/*"],
+      "@common": ["src/common"],
+      "@common/*": ["src/common/*"],
+      "@images/*": ["src/images/*"],
+      "@images": ["src/images"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

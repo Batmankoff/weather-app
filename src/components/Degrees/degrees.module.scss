@@ -1,0 +1,38 @@
+.form {
+  width: 170px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $light;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  cursor: pointer;
+}
+.input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.input:checked + .celsius {
+  @extend %roboto-medium;
+  opacity: 1;
+}
+.input:not(.input:checked) ~ .fahrenheit {
+  @extend %roboto-medium;
+  opacity: 1;
+}
+.celsius,
+.fahrenheit {
+  color: #343a40;
+  @extend %roboto-normal;
+  font-size: 18px;
+  line-height: normal;
+  opacity: 0.7;
+}

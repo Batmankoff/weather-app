@@ -1,0 +1,32 @@
+.form {
+  width: 603px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  flex-grow: 1;
+  height: 100%;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  @extend %roboto-medium;
+  font-size: 24px;
+  line-height: 1;
+  &:focus-visible {
+    outline: none;
+  }
+}
+.button {
+  width: 73px;
+  height: 100%;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #eb6f4c;
+  cursor: pointer;
+}
+
+.icon {
+  color: $light;
+}

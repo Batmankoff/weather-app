@@ -1,0 +1,19 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.parameter {
+  color: rgba(255, 255, 255, 0.8);
+  @extend %roboto-normal;
+  font-size: 18px;
+  line-height: normal;
+}
+.value {
+  color: #fff;
+  @extend %roboto-bold;
+  font-size: 24px;
+  line-height: normal;
+}

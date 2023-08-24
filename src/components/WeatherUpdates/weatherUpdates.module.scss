@@ -1,0 +1,18 @@
+.updates {
+  max-width: 730px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.updates::-webkit-scrollbar {
+  display: none;
+}
+
+.updates::-webkit-scrollbar-track {
+  background-color: none;
+}

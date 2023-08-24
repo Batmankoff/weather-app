@@ -1,0 +1,27 @@
+.weather {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.location {
+  margin-bottom: 23px;
+  color: #343a40;
+  @extend %roboto-normal;
+  font-size: 32px;
+  line-height: normal;
+}
+.datetime {
+  color: rgba(52, 58, 64, 0.9);
+  @extend %roboto-normal;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+.temperature {
+  color: #343a40;
+  @extend %roboto-medium;
+  font-size: 96px;
+  line-height: normal;
+}

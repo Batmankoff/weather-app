@@ -1,0 +1,29 @@
+@import 'normalize.css';
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
