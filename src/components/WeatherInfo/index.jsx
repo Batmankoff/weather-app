@@ -9,7 +9,7 @@ const WeatherInfo = ({ scale, forecast, hourlyForecast }) => {
       <Container>
         <div className={styles.info}>
           <Weather scale={scale} {...forecast} />
-          <WeatherUpdates hourlyForecast={hourlyForecast} />
+          <WeatherUpdates scale={scale} hourlyForecast={hourlyForecast} />
         </div>
       </Container>
     </>
