@@ -4,11 +4,20 @@ import styles from './search.module.scss';
 
 const Search = ({ locationChange }) => {
   const [text, setText] = useState('');
-  const onSubmitHandler = (event) => {
+  const allowedCharacters = /[\p{L}\s-]/u;
+
+  function onSubmitHandler(event) {
     event.preventDefault();
     locationChange(text);
     setText('');
-  };
+  }
+
+  function onChangeHandler(event) {
+    const input = event.target.value;
+    if (allowedCharacters.test(input) || input === '') {
+      setText(input.charAt(0).toUpperCase() + input.slice(1));
+    }
+  }
 
   return (
     <form className={styles.form} onSubmit={onSubmitHandler}>
@@ -16,7 +25,7 @@ const Search = ({ locationChange }) => {
         className={styles.input}
         type='text'
         value={text}
-        onChange={(e) => setText(e.target.value)}
+        onChange={onChangeHandler}
       />
       <button className={styles.button}>
         <RiSearchLine className={styles.icon} />
