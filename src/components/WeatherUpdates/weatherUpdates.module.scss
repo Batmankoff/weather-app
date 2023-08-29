@@ -1,4 +1,7 @@
 .updates {
   max-width: 730px;
   cursor: grab;
+  @include max-w(992) {
+    max-width: 100%;
+  }
 }

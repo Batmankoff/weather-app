@@ -1,6 +1,12 @@
 .info {
   height: calc(100vh - 280.5px);
+  min-height: 405px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
+  @include max-w(992) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

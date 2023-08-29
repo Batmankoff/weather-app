@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include max-w(992) {
+    width: 100%;
+  }
 }
 .location {
   margin-bottom: 23px;

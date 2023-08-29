@@ -9,5 +9,6 @@
   gap: 30px;
   @include max-w(767) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
