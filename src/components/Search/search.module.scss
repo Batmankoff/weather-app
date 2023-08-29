@@ -1,10 +1,16 @@
 .form {
-  width: 603px;
+  flex-basis: 603px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  @include max-w(767) {
+    order: 2;
+  }
+  @include max-w(425) {
+  }
 }
+
 .input {
   flex-grow: 1;
   height: 100%;
@@ -17,6 +23,10 @@
   &:focus-visible {
     outline: none;
   }
+  @include max-w(425) {
+    width: 230px;
+    padding: 10px;
+  }
 }
 .button {
   width: 73px;
@@ -25,6 +35,9 @@
   border-radius: 0 5px 5px 0;
   background-color: #eb6f4c;
   cursor: pointer;
+  @include max-w(425) {
+    min-width: 50px;
+  }
 }
 
 .icon {

@@ -3,6 +3,12 @@
   height: 40px;
   border-radius: 5px;
   background-color: $light;
+  @include max-w(767) {
+    margin-left: auto;
+  }
+  @include max-w(425) {
+    width: 100px;
+  }
 }
 .label {
   display: flex;
