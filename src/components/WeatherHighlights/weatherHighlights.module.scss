@@ -7,4 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
+  @include max-w(767) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
